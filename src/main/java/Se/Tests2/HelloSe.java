@@ -42,7 +42,10 @@ public class HelloSe {
 	        String text = search_button.getAttribute("value");
 
 	        Assert.assertEquals(text, search_text, "Text not found!");
+	        
+	        
 	        driver.get("http://www.flipkart.com");
+	        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Fashion, Books, Electronics, Home Appliances and More");
 
 	    }
 
