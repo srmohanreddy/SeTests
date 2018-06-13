@@ -32,7 +32,7 @@ public class HelloSe {
 	    @Test
 	    public void verifySearchButton() {
 
-	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 	        driver.get("http://www.google.com");
 
@@ -43,6 +43,15 @@ public class HelloSe {
 
 	        Assert.assertEquals(text, search_text, "Text not found!");
 	        
+	        driver.get("http://www.flipkart.com");
+	        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Fashion, Books, Electronics, Home Appliances and More", "Text Found Flipkart Title");
+
+	    }
+	    @Test
+	    public void verifyFlipkartTitle() {
+
+	        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
 	        driver.get("http://www.flipkart.com");
 	        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Fashion, Books, Electronics, Home Appliances and More", "Text Found Flipkart Title");
 
