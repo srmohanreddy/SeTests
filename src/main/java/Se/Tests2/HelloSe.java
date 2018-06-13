@@ -42,6 +42,8 @@ public class HelloSe {
 	        String text = search_button.getAttribute("value");
 
 	        Assert.assertEquals(text, search_text, "Text not found!");
+	        driver.get("http://www.flipkart.com");
+
 	    }
 
 
