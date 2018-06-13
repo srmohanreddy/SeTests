@@ -43,9 +43,8 @@ public class HelloSe {
 
 	        Assert.assertEquals(text, search_text, "Text not found!");
 	        
-	        
 	        driver.get("http://www.flipkart.com");
-	        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Fashion, Books, Electronics, Home Appliances and More");
+	        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Fashion, Books, Electronics, Home Appliances and More", "Text Found Flipkart Title");
 
 	    }
 
